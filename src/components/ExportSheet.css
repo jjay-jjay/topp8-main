@@ -1,0 +1,143 @@
+/* General container styles */
+.export-page__container {
+    padding: 2rem;
+    font-family: 'Noto Sans Lao', sans-serif;
+    margin: 0;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Title */
+  .export-page__title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+    animation: slideIn 1s ease;
+  }
+  
+  /* Subtitle */
+  .export-page__subtitle {
+    font-size: 1.8rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  /* Group info */
+  .export-page__group-info {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0.5rem 0;
+  }
+  
+  /* Topic styles */
+  .export-page__topic {
+    margin-bottom: 1.5rem;
+  }
+  
+  .export-page__topic-name {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 1rem;
+  }
+  
+  /* Group list */
+  .export-page__group-list {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .export-page__group-item {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Loading and Error States */
+  .export-page__loading {
+    font-size: 1.2rem;
+    color: #ff6347;
+  }
+  
+  .export-page__error {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .export-page__retry-button {
+    font-family: 'Noto Sans Lao', sans-serif;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .export-page__retry-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Download button */
+  .export-page__download-button {
+    font-family: 'Noto Sans Lao', sans-serif;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    text-align: center;
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .export-page__download-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .manage-topics-back-btn {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #007bff;
+    background-color: #f2f2f2;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+  }
+  
+  .manage-topics-back-btn:hover {
+    background-color: #e0e0e0;
+    color: #0056b3;
+  }
+  
+  

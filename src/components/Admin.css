@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@100..900&display=swap');
+
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    animation: bg-pulse 10s ease-in-out infinite;
+    
+  }
+  
+  @keyframes bg-pulse {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .admin-card {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 50, 0.1);
+    padding: 2rem;
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+    animation: card-drop 0.6s ease-out;
+  }
+  
+  @keyframes card-drop {
+    from { transform: translateY(-20px); opacity: 0; }
+    to   { transform: translateY(0);    opacity: 1; }
+  }
+  
+  .admin-card h2 {
+    font-size: 2rem;
+    color: #034078;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .admin-card h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #0288d1;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+    animation: underline-grow 0.8s ease-out;
+  }
+  
+  @keyframes underline-grow {
+    from { width: 0; }
+    to   { width: 50px; }
+  }
+  
+  .admin-card p {
+    font-size: 1rem;
+    color: #05668d;
+    margin-bottom: 1.5rem;
+  }
+  
+  .admin-button {
+    padding: 0.75rem 1.5rem;
+    font-family: 'Noto Sans Lao', sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: linear-gradient(135deg, #0288d1, #26c6da);
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .admin-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 50, 0.15);
+  }
+  
+  .admin-button:active {
+    transform: translateY(-1px);
+  }
+  
+  .admin-button::after {
+    content: '';
+    position: absolute;
+    top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg) translate(-100%, -100%);
+    transition: transform 0.5s;
+  }
+  
+  .admin-button:hover::after {
+    transform: rotate(45deg) translate(0, 0);
+  }
+  

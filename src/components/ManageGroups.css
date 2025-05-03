@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@100..900&display=swap');
+
+
+
+
+.manage-groups-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Noto Sans Lao', 'Prompt', 'Kanit', sans-serif;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.manage-groups-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #2b2b2b;
+  margin-bottom: 1.5rem;
+  animation: slideDown 0.6s ease;
+}
+
+.manage-groups-error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.manage-groups-topic-select {
+  
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.manage-groups-topic-select label {
+  
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.manage-groups-topic-select select {
+  font-family: 'Noto Sans Lao', 'Prompt', 'Kanit', sans-serif;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.manage-groups-topic-select select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.manage-groups-loading,
+.manage-groups-empty {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+.manage-groups-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.manage-groups-list-item,
+.manage-groups-edit-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.manage-groups-list-item:hover {
+  background-color: #f8f9fa;
+  transform: scale(1.01);
+}
+
+.manage-groups-edit-item input {
+  font-family: 'Noto Sans Lao', 'Prompt', 'Kanit', sans-serif;
+  display: block;
+  margin-bottom: 0.6rem;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.manage-groups-actions,
+.manage-groups-action-btns {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.edit-button {
+  font-family: 'Noto Sans Lao', 'Prompt', 'Kanit', sans-serif;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: blue;
+  color: white;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.manage-groups-members {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-left: 1rem;
+  margin-top: 0.4rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+
+.member-item {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* 🎞️ Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* 🔴 ปุ่มลบและยกเลิกเป็นสีแดง */
+.delete-button {
+  font-family: 'Noto Sans Lao', 'Prompt', 'Kanit', sans-serif;
+  background-color: #e74c3c; /* สีแดง */
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c0392b; /* สีแดงเข้มเมื่อ hover */
+}
+
+
