@@ -4,7 +4,7 @@ import MemberInput from "./components/MemberInput";
 import Login from "./components/Login";
 import AddTopic from "./components/AddTopic";
 import Admin from "./components/Admin";
-import ManageGroups from "./components/ManagaGroups";
+import ManageGroups from "./components/ManageGroups";
 import ExportSheet from "./components/ExportSheet";
 
 function App() {
