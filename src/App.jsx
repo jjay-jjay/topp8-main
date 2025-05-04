@@ -1,4 +1,4 @@
-import {  HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import TopicL from "./components/TopicL";
 import MemberInput from "./components/MemberInput";
 import Login from "./components/Login";
@@ -6,6 +6,7 @@ import AddTopic from "./components/AddTopic";
 import Admin from "./components/Admin";
 import ManageGroups from "./components/ManageGroups";
 import ExportSheet from "./components/ExportSheet";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/groups" element={<ManageGroups />} />
         <Route path="/export-sheet" element={<ExportSheet />} />
       </Routes>
+      <SpeedInsights />
     </Router>
   );
 }
